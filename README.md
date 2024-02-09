@@ -194,6 +194,8 @@ Now, if we run ```git status``` again we will see that .gitignore is untracked, 
 Fortunately you don't have to do a lot of this as there are ready made .gitignore files available online: https://github.com/github/gitignore  
 
 ****
+<div class="page"></div>
+&zwj;
 
 # Branching
 
@@ -308,6 +310,8 @@ When you want those changes back you can run ```git stash pop```.
 > This works on *any* branch, not just the original branch those changes were on. This is extremely useful if you started making changes on a branch, realised you were on the wrong branch - you can stash your changes, switch to the correct branch and run ```git stash pop``` to bring the changes into the new branch.
 
 ***
+<div class="page"></div>
+&zwj;
 
 # Sharing Your Code
 
@@ -405,6 +409,9 @@ The readme file will now be available to you locally!
 | git remote add origin <REMOTE_URL> | Adds the remote repository as the "target" for push and pull commands |
 
 ****
+
+<div class="page"></div>
+&zwj;
 
 # Other Help
 
