@@ -59,7 +59,7 @@ git config --global user.email ‘YOUR_EMAIL’
 
 ```git status``` is probably a command you’ll be using often, to find out what files are new or changes have been made.
 
-```git status``` will tell you what files are being tracked and whether there are changes made that haven’t been “checkedin” yet.
+```git status``` will tell you what files are being tracked and whether there are changes made that haven’t been “checked in” yet.
 
 ![git status](images/gitstatus.png)
 - Git is letting us know that nothing has been committed and that we have one untracked file. 
@@ -102,11 +102,11 @@ Let’s commit our current status into the Git history, and write a message to g
 
 (Your numbers will be different, but otherwise this should look very similar.)
 
-We are using two "flags" afetr git commit:
+We are using two "flags" after git commit:
 - **-a** tells git to commit all files that are *currently* being tracked. Remember, new files will still need to be added with ```git add``` first.
 - ***-m*** tells git that we want to include a message. We should include a message about what the commit is every time.
 
-> Commit messages should be explanatory. Often they will be very mundane "fixed broken hyperlin on homepage for defect #999", but this allows us to keep track between commits and get that whole history of what has been done, when, and by who.
+> Commit messages should be explanatory. Often they will be very mundane "fixed broken hyperlink on homepage for defect #999", but this allows us to keep track between commits and get that whole history of what has been done, when, and by who.
 
 If you run git status again now git will tell you everything is normal and you are up-to-date:
 
@@ -146,7 +146,7 @@ Here we can see our two commits so far, with the newest at the top, along with t
 
 ## Help, I've Made Changes I Don't Want To Commit!
 
-Relax, gitr has got you covered. SOmetimes you start work on somethign and it turns out all that work was rubbish and you are no longer sure what changed.
+Relax, git has got you covered. SOmetimes you start work on something and it turns out all that work was rubbish and you are no longer sure what changed.
 
 ### I've only made changes to one file I want to revert
 
@@ -185,7 +185,7 @@ If we run git status again, we can see that the .gitignore file was added, but t
 
 ![gitignore contents](images/gitignorecontents.png)
 
-Now, if we run ```git status``` again we will see that .gitignore is untracked, but the ignoreme.txt fiel is nowhere to be found - git is successfully ignoring the file.
+Now, if we run ```git status``` again we will see that .gitignore is untracked, but the ignoreme.txt file is nowhere to be found - git is successfully ignoring the file.
 
 ![status afetr gitignore added](<images/status after git ignore.png>)
 
@@ -197,7 +197,7 @@ Fortunately you don't have to do a lot of this as there are ready made .gitignor
 
 # Branching
 
-So far, we've just been commiting to the main, or master, branch. This is the default branch every repository starts with.
+So far, we've just been committing to the main, or master, branch. This is the default branch every repository starts with.
 
 This is fine if you are just working on your own (or if you are doing Trunk Based Delivery, but that's a whole other course...) and on small projects.
 
@@ -209,7 +209,7 @@ In the diagram below, you can see we have released version 1 of the code, and th
 
 ![Alt text](<images/branching - tracy.png>)[^1]
 
-You'll also see that we had to fix a bug on our main branch. This bug fix doesn't make any changes to our feasture branch, and our feature branch doesn't make any changes to our main branch. This allows us to keep non-ready code separate and not deploy partial code to our users.
+You'll also see that we had to fix a bug on our main branch. This bug fix doesn't make any changes to our feature branch, and our feature branch doesn't make any changes to our main branch. This allows us to keep non-ready code separate and not deploy partial code to our users.
 
 > There are other ways, called *feature flags* but we will not be discussing that here.
 
@@ -271,7 +271,7 @@ Firstly, on the master branch (which you should still be on, but check with ```g
 
 ![Alt text](images/conflicts1.PNG)
 
-Now, on our feature branch, we commit our changed file, and attemp to merge from ther master branch:
+Now, on our feature branch, we commit our changed file, and attempt to merge from the master branch:
 
 ![Alt text](images/conflict2.png)
 
@@ -301,7 +301,7 @@ Git will moan if you have changes on a branch that you *haven't* committed and t
 
 ```git stash``` helps you temporarily set aside your work so you can deal with something else, and then easily pick up where you left off when you're ready. It's like a pause button for your changes.
 
-This tells git to move your changes to an inivisible branch or holding pen (they won;t even show up if you run git status), and allows you to move back and forth between branches again.
+This tells git to move your changes to an invisible branch or holding pen (they won;t even show up if you run git status), and allows you to move back and forth between branches again.
 
 When you want those changes back you can run ```git stash pop```. 
 
@@ -335,7 +335,7 @@ Make sure your repository is set to Public so other people can see it! Otherwise
 
 ![Alt text](images/createrepo2.png)
 
-Once you have done this, you'll get shown the link to the respository. Copy this link to the clipboard.
+Once you have done this, you'll get shown the link to the repository. Copy this link to the clipboard.
 
 ![Alt text](images/createrepo3.png)
 
@@ -377,7 +377,7 @@ Having done this once, we won't need to do it again!
 
 ## Pulling Code
 
-Okay, so now it's there. How do we get code from it? Well, first let's prove that changes we make to the repository are reflected when we pull the latest changes. In your repository you'll see it want you to add a README file - so go ahead and click that buttton:
+Okay, so now it's there. How do we get code from it? Well, first let's prove that changes we make to the repository are reflected when we pull the latest changes. In your repository you'll see it want you to add a README file - so go ahead and click that button:
 
 ![Alt text](images/createreadme.png)
 
@@ -391,7 +391,7 @@ To bring the file from the remote repository to our local repository, we need to
 
 ![Alt text](<images/git pull.png>)
 
-The readme file will not be available to you locally!
+The readme file will now be available to you locally!
 
 # Wrapping Up
 
@@ -401,7 +401,7 @@ The readme file will not be available to you locally!
 | git add . | Adds all untracked files to staging |
 | git commit -a -m "Message" | Creates a commit with the message between the quotes |
 | git push| Pushes all changes from local to remote |
-| git pull | Pulls alkl changes from remote to local |
+| git pull | Pulls all changes from remote to local |
 | git remote add origin <REMOTE_URL> | Adds the remote repository as the "target" for push and pull commands |
 
 ****
