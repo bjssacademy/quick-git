@@ -361,6 +361,39 @@ Verify you have successfully added the remote by using ```git remote -v```
 
 ![Alt text](images/verify.png)
 
+## Push Our Code To The Remote Repository
+
+It's time to push our code the the remote repository using ```git push -u origin master```, where we'll be asked to sign in to GitHub to prove its us!
+
+![Alt text](images/firstpush.png)
+
+Click on Sign in with your browser, and enter your details. You'll then need to click the button "Authorize git-ecosystem".
+
+![Alt text](images/giteco.png)
+
+Having done this once, we won't need to do it again!
+
+>Now, go to your GitHub account and look in the repository - all our code will now be there for the world to see!
+
+## Pulling Code
+
+Okay, so now it's there. How do we get code from it? Well, first let's prove that changes we make to the repository are reflected when we pull the latest changes. In your repository you'll see it want you to add a README file - so go ahead and click that buttton:
+
+![Alt text](images/createreadme.png)
+
+In the window that opens, type some text into it and click on the "Commit changes" button, then the "Commit new file" button:
+
+![Alt text](images/commitfile.png)
+
+Now our remote repository has a file we *don't* have locally.
+
+To bring the file from the remote repository to our local repository, we need to pull it using ```git pull```:
+
+![Alt text](<images/git pull.png>)
+
+The readme file will not be available to you locally!
+
+****
 
 # Other Help
 
@@ -377,5 +410,7 @@ If you want to just remove the file from Git but keep the file on your computer,
 So: ```git rm --cached FILENAME```
 
 This isn’t something that should be run often at all, but useful to know just in case.
+
+
 
 [^1]: Credit: Tracey Osborn
