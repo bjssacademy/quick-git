@@ -393,6 +393,17 @@ To bring the file from the remote repository to our local repository, we need to
 
 The readme file will not be available to you locally!
 
+# Wrapping Up
+
+| Command | Description |
+| --- | ----------- |
+| git init -b main | Creates a new repository in the folder you run the command in, with a default branch named main. ONLY needs to be run once! |
+| git add . | Adds all untracked files to staging |
+| git commit -a -m "Message" | Creates a commit with the message between the quotes |
+| git push| Pushes all changes from local to remote |
+| git pull | Pulls alkl changes from remote to local |
+| git remote add origin <REMOTE_URL> | Adds the remote repository as the "target" for push and pull commands |
+
 ****
 
 # Other Help
